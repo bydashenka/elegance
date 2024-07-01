@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+@import '_mixin.scss';
+
+@include header;
+@include footer;
+@include title;
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+h2{
+    padding-bottom: 80px;
+}
+
+.master{
+    background: url(img/lines.png) no-repeat;
+    max-width: 100%;
+    font-family: "Cormorant", serif;
+    color: black;
+    font-size: 20px;
+    &__cards{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    &__cardss{
+        display: flex;
+        margin-left: 300px;
+    }
+
+    &__card{
+        width: 303px;
+        height: 575px;
+        border: 1px solid black;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: grid;
+        justify-items: center;
+    }
+
+    &__skill{
+        text-transform: uppercase;
+        margin-top: 17px;
+        margin-bottom: 10px;
+    }
+    &__name{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    &__about{
+        font-size: 15px;
+        margin-top: 5px;
+        width: 298px;
+    }
+}
+@media (max-width: 1200px) {
+    h2{
+        padding-bottom: 60px;
+    }
+    .master{
+        background: url(img/line1.png) no-repeat;
+        font-size: 10px;
+        &__photo{
+            height: 178px;
+        }
+        &__cards{
+            margin-bottom: 30px;
+        }
+        &__cardss{
+            margin-left: 185px;
+        }
+        &__card{
+            width: 154px;
+            height: 292px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        &__skill{
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+        &__name{
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        &__about{
+            font-size: 8px;
+            margin-top: 2px;
+            width: 148px;
+        }
+    }
+}
+@media (max-width: 800px) {
+    h2{
+        padding-bottom: 40px;
+    }
+    .master{
+        background: url(img/дшту2.png) no-repeat;
+        font-size: 8px;
+        &__photo{
+            height: 125px;
+        }
+        &__cards{
+            margin-bottom: 20px;
+        }
+        &__cardss{
+            margin-left: 118px;
+        }
+        &__card{
+            border: 0.5px solid black;
+            width: 111px;
+            height: 211px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        &__skill{
+            margin-top: 1px;
+            margin-bottom: 2px;
+        }
+        &__name{
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+        &__about{
+            font-size: 5px;
+            margin-top: 2px;
+            width: 105px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    h2{
+        padding-bottom: 15px;
+    }
+    .master{
+        background: none;
+        font-size: 3.2px;
+        &__photo{
+            height: 53px;
+        }
+        &__cards{
+            margin-bottom: 5px;
+        }
+        &__cardss{
+            margin-left: 83px;
+        }
+        &__card{
+            border: 0.05px solid black;
+            width: 47px;
+            height: 88px;
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+        &__skill{
+            margin-top: 1px;
+            margin-bottom: 2px;
+        }
+        &__name{
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+        &__about{
+            font-size: 2.2px;
+            margin-top: 2px;
+            width: 42px;
+        }
+    }
+}

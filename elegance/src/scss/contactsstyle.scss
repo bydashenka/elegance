@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+@import '_mixin.scss';
+
+@include header;
+@include footer;
+@include title;
+@include button;
+@include btnvalid;
+@include error;
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+.contact{
+    &__box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        font-family: "Cormorant", serif;
+        color: black;
+        font-size: 20px;
+    }
+    &__text{
+        margin-bottom: 5px;
+    }
+    &__img{
+        margin-right: 20px;
+    }
+    &__address{
+        margin-bottom: 25px;
+    }
+    &__number{
+        margin-bottom: 25px;
+    }
+    &__time{
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 1100px) {
+    .contact{
+        &__box{
+            margin-top: 40px;
+            font-size: 13px;
+        }
+        &__text{
+            margin-bottom: 3px;
+        }
+        &__img{
+            margin-right: 20px;
+            width: 280px;
+        }
+        &__icon{
+            width: 20px;
+        }
+        &__address{
+            margin-bottom: 20px;
+        }
+        &__number{
+            margin-bottom: 20px;
+        }
+        &__time{
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .contact{
+        &__box{
+            margin-top: 40px;
+            font-size: 8px;
+        }
+        &__text{
+            margin-bottom: 3px;
+        }
+        &__img{
+            margin-right: 20px;
+            width: 190px;
+        }
+        &__icon{
+            width: 14px;
+        }
+        &__address{
+            margin-bottom: 18px;
+        }
+        &__number{
+            margin-bottom: 18px;
+        }
+        &__time{
+            margin-bottom: 18px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .contact{
+        &__box{
+            margin-top: 15px;
+            font-size: 4px;
+        }
+        &__text{
+            margin-bottom: 2px;
+        }
+        &__img{
+            margin-right: 10px;
+            width: 90px;
+        }
+        &__icon{
+            width: 5px;
+        }
+        &__address{
+            margin-bottom: 10px;
+        }
+        &__number{
+            margin-bottom: 10px;
+        }
+        &__time{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.form{
+text-align: center;
+margin-top: 80px;
+font-family: "Cormorant", serif;
+color: black;
+font-size: 20px;
+&__question{
+    margin-bottom: 50px;
+}
+&__box{
+    margin: auto;
+    width: 420px;
+    height: 400px;
+    border: 1px solid #000;
+    display: grid;
+    justify-items: start;
+    justify-content: center;
+    align-content: space-evenly;
+
+}
+&__connection{
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+input{
+    height: 40px;
+    width: 300px;
+    font-family: "Cormorant", serif;
+    color: black;
+    font-size: 20px;
+}
+}
+.button{
+    width: 140px;
+    height: 45px;
+}
+@media (max-width: 1100px) {
+    .form{
+        margin-top: 40px;
+        font-size: 12px;
+        &__question{
+            margin-bottom: 40px;
+        }
+        &__box{
+            width: 235px;
+            height: 285px;
+            border: 1px solid #000;        
+        }
+        &__connection{
+            margin-left: 30px;
+        }
+        input{
+            height: 22px;
+            width: 168px;
+            font-size: 10px;
+        }
+        }
+        .button{
+            width: 80px;
+            height: 30px;
+        }
+}
+@media (max-width: 800px) {
+    .form{
+        margin-top: 20px;
+        font-size: 8px;
+        &__question{
+            margin-bottom: 40px;
+        }
+        &__box{
+            width: 168px;
+            height: 220px;
+            border: 0.5px solid #000;        
+        }
+        &__connection{
+            margin-left: 20px;
+        }
+        input{
+            height: 16px;
+            width: 120px;
+            font-size: 6px;
+            border: 0.5px solid #000;  
+        }
+        }
+        .button{
+            width: 60px;
+            height: 20px;
+            border: 0.5px solid #000; 
+        }
+}
+@media (max-width: 500px) {
+    .form{
+        margin-top: 15px;
+        font-size: 4px;
+        &__question{
+            margin-bottom: 8px;
+        }
+        &__box{
+            width: 82px;
+            height: 125px;
+            border: 0.05px solid #000;        
+        }
+        &__connection{
+            margin-left: 10px;
+        }
+        input{
+            height: 8px;
+            width: 60px;
+            font-size: 3px;
+            border: 0.05px solid #000;   
+        }
+        }
+        .button{
+            width: 40px;
+            height: 10px;
+            border: 0.05px solid #000; 
+        }
+}

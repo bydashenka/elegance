@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+@import '_mixin.scss';
+
+@include header;
+@include footer;
+@include title;
+@include btnvalid;
+@include error;
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.login{
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Cormorant", serif;
+    color: black;
+    font-size: 22px;
+    &__link{
+        color: black;
+        font-family: "Cormorant", serif;
+        font-size: 15px;
+    }
+    &__line{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    img{
+        width: 142px;
+    }
+    &__box{
+        display: grid;
+        justify-items: start;
+        justify-content: center;
+        align-content: space-evenly;
+    }
+    input{
+        height: 45px;
+        width: 303px;
+        margin-bottom: 20px;
+        font-family: "Cormorant", serif;
+        color: black;
+        font-size: 22px;
+    }
+    label{
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .link{
+        font-size: 12px;
+    }
+    .login{
+        font-size: 15px;
+        img{
+            width: 80px;
+        }
+        &__box{
+            margin: 25px 0;
+        }
+        input{
+            height: 25px;
+            width: 170px;
+            margin-bottom: 15px;
+            font-size: 13px;
+            border: 1px solid black;
+        }
+        label{
+            margin-bottom: 5px;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .link{
+        font-size: 7px;
+    }
+    .login{
+        font-size: 9px;
+        img{
+            width: 80px;
+        }
+        &__box{
+            margin: 10px 0;
+        }
+        input{
+            height: 20px;
+            width: 120px;
+            margin-bottom: 8px;
+            font-size: 6px;
+            border: 0.5px solid black;
+        }
+        label{
+            margin-bottom: 5px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .link{
+        font-size: 3px;
+    }
+    .login{
+        font-size: 6px;
+        img{
+            width: 40px;
+        }
+        &__box{
+            margin: 10px 0;
+        }
+        input{
+            height: 8px;
+            width: 60px;
+            margin-bottom: 3px;
+            font-size: 3px;
+            border: 0.05px solid black;
+        }
+        label{
+            margin-bottom: 5px;
+        }
+    }
+}

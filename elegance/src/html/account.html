@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../img/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elegance</title>
+  </head>
+  <body>
+    <!-- <div id="header"></div> -->
+    <div id="content">
+      <h1>Личный кабинет</h1>
+      <p>Добро пожаловать, <span id="username"></span>!</p>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        document.getElementById('username').textContent = name;
+      });
+    </script>
+    <!-- <div id="footer"></div>
+    <script type="module" src="../js/account.js"></script> -->
+  </body>
+</html>

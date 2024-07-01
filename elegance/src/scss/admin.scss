@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+@import '_mixin.scss';
+
+@include header;
+@include footer;
+@include title;
+@include btnvalid;
+@include error;
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+.table-container{
+    margin: 30px auto;
+}
+
+h3{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Cormorant", serif;
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-bottom: 10px;
+}
+table{
+    border: solid 1px black;
+    margin: 0 auto;
+}
+th{
+    border: solid 1px black;
+    margin: 0 auto;
+}
+tr{
+    border: solid 1px black;
+    margin-right: 50px;
+}
+.records-table-container{
+    text-align: center;
+    overflow-x: auto;
+    display: grid;
+    justify-content: center;
+}
+
+.records-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.records-table th, .records-table td {
+    padding: 10px;
+    border: 1px solid #996b63;
+    text-align: left;
+}
+
+.records-table th {
+    background-color: #f3d5d2;
+    color: #ffffff;
+    font-family: "Cormorant", serif;
+    color: black;
+    font-size: 20px;
+}
+
+.records-table td.editable {
+    background-color: #f8f9fa;
+}
+
+.records-table td.editable[contenteditable="true"]:focus {
+    outline: 2px solid #bf8e8a;
+}
+
+.records-table-container p {
+    margin-top: 10px;
+    color: #dc3545;
+}
+.editable {
+    background-color: #f0e6d6;
+}
+.editable[contenteditable="true"] {
+    cursor: pointer;
+}
+.editable:focus {
+    outline: 2px solid #f0e6d6;
+    background-color: #fff8e1;
+}
+button {
+    background-color: #e4beba;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: "Cormorant", serif;
+    font-size: 25px;
+}
+button:hover {
+    background-color: #dcb9a3;
+}
+form {
+    margin: 20px auto;
+    display: grid;
+    justify-content: center;
+}
+form h4 {
+    margin-bottom: 10px;
+    color: #efcbbc;
+    font-family: "Cormorant", serif;
+    font-size: 25px;
+}
+form input {
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffebe1;
+    width: calc(100% - 18px);
+    font-family: "Cormorant", serif;
+    color: black;
+    font-size: 18px;
+}
+form button {
+    display: block;
+}

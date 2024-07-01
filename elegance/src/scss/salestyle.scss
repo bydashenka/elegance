@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+@import '_mixin.scss';
+
+@include header;
+@include footer;
+@include title;
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.sale{
+    font-family: "Cormorant", serif;
+    color: black;
+    &__cards{
+        display: flex;
+        justify-content: space-around;
+        margin: 80px auto;
+        width: 1600px;
+    }
+    &__cardstwo{
+        display: flex;
+        margin-left: 180px;
+        margin-top: 80px;
+    }
+    &__card{
+        width: 465px;
+        height: 308px;
+        border: 1px solid black;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+    &__cardtwo{
+        width: 465px;
+        height: 308px;
+        border: 1px solid black;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        margin-right: 70px;
+        text-align: center;
+    }
+    &__img{
+        height: 200px;
+    }
+    &__name{
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    &__lilname{
+        text-transform: lowercase;
+        font-size: 18px;
+    }
+    &__text{
+        font-size: 15px;
+    }
+}
+@media (max-width: 1100px) {
+    .sale{
+        &__cards{
+            margin: 20px auto;
+            width: 600px;
+        }
+        &__cardstwo{
+            margin-left: 86px;
+            margin-top: 20px;
+        }
+        &__card{
+            width: 185px;
+            height: 124px;
+            border: 0.5px solid black;
+        }
+        &__cardtwo{
+            width: 185px;
+            height: 124px;
+            border: 0.5px solid black;
+            margin-right: 15px;
+        }
+        &__img{
+            height: 80px;
+        }
+        &__name{
+            font-size: 8px;
+        }
+        &__lilname{
+            font-size: 8px;
+        }
+        &__text{
+            font-size: 6px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .sale{
+        &__cards{
+            margin: 10px auto;
+            width: 300px;
+        }
+        &__cardstwo{
+            margin-left: 45px;
+            margin-top: 7px;
+        }
+        &__card{
+            width: 90px;
+            height: 60px;
+            border: 0.2px solid black;
+        }
+        &__cardtwo{
+            width: 90px;
+            height: 60px;
+            border: 0.2px solid black;
+            margin-right: 10px;
+        }
+        &__img{
+            height: 39px;
+        }
+        &__name{
+            font-size: 4px;
+        }
+        &__lilname{
+            font-size: 4px;
+        }
+        &__text{
+            font-size: 3px;
+        }
+    }
+}
